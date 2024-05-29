@@ -1,0 +1,127 @@
+/*Cambio Color Botón */
+
+.btn-dark{
+    background-color: #8064A2 !important;
+}
+.btn-primary{
+    background-color: #8064A2 !important;
+}
+.btn-gen{
+    border-radius: 5px;
+    color: white;
+    background-color: #8064A2;
+}
+.btn-modal-cancel{
+    float: right;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 150);
+}
+
+
+body{
+    padding-top: 6%;
+}
+
+.carousel-inner{
+    height: 400px;
+}
+
+
+
+.Eslogan{
+    text-align: center;
+    margin-top: 80px;
+}
+
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+.producto input:focus{
+    outline: none;
+}
+.producto input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.buy-btn{
+    background: #ffffff;
+    opacity: 1;
+    transition: 0.3s all;
+}
+
+.msg-header{
+    background-color: #000000;
+}
+
+.msg-header p{
+    color: #ffffff;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.soy-cont-menu{
+    background-color: #ffffff;
+}
+
+.carousel-slide{
+    padding-top: 6rem;
+}
+
+
+
+.section .soy-nosotros{
+    padding-top: 6rem;
+}
+
+.texto-fidelidad{
+    
+}
+
+.opiniones{
+    padding-bottom: 1rem;
+}
+
+.soy-imagen-separador{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.soy-cont-fidelidad{
+    padding-bottom: 6rem;
+    
+}
+
+.soy-nosotros{
+    padding-top: 6rem;
+}
+
+
+
+
+/*====== Prueba-S ======*/
+
+#lawea{
+    width: 500px;
+    background-color: #8064A2;
+
+}
+
+#textoo{
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.soy-cont{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
+}
