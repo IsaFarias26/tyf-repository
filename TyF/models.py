@@ -3,7 +3,7 @@ from django.db import models
 from django.utils import timezone
 
 
-class VideoJuegos(models.Model): (clave primaria)
+class VideoJuegos(models.Model): "(clave primaria)"
     Autor = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     Titulo = models.CharField(max_length=200)
     Descripción = models.TextField()
@@ -17,7 +17,7 @@ class VideoJuegos(models.Model): (clave primaria)
         return self.title
 
 class JuegosDeMesa(models.Model):
-    Autor = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    Autor = models.TextField()
     Titulo = models.CharField(max_length=200)
     Descripción = models.TextField()
     
