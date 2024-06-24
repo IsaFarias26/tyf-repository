@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'TyF.apps.TyfConfig'
+
 ]
 
 MIDDLEWARE = [
@@ -145,4 +146,4 @@ TEMPLATES = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-#nose
+# nose
