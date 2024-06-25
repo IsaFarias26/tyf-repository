@@ -16,15 +16,25 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from TyF.views import index, catalogo, contacto, carrito, nosotros, producto
+from TyF import views
+
+# urlpatterns = [
+path('admin/', admin.site.urls),
+path('TyF/', include('TyF.urls')),
+path('inicio/', views.index),
+path('catalogo/', views.catalogo),
+path('contacto/', views.contacto),
+path('carrito/', views.carrito),
+path('nosotros/', views.nosotros),
+path('producto/', views.producto),
+# ]
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('TyF/', include('TyF.urls')),
-    path('inicio/', index),
-    path('catalogo/', catalogo),
-    path('contacto/', contacto),
-    path('carrito/', carrito),
-    path('nosotros/', nosotros),
-    path('producto/', producto),
+    path('', views.index, name='index'),
+    path('catalogo/', views.catalogo, name='catalogo'),
+    path('contacto/', views.contacto, name='contacto'),
+    path('carrito/', views.carrito, name='carrito'),
+    path('nosotros/', views.nosotros, name='nosotros'),
+    path('producto/', views.producto, name='producto'),
+    path('pruebas/', views.pruebas, name='pruebas'),
 ]
