@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CRUD de Productos</title>
+  </head>
+  <body>
+    <h1>Listado de Productos</h1>
+    <ul>
+      {% for producto in productos %}
+      <li>{{ producto.titulo }} - {{ producto.descripcion }}</li>
+      {% endfor %}
+    </ul>
+
+    <a href="{% url 'crear_producto' %}">Crear Nuevo Producto</a>
+  </body>
+</html>

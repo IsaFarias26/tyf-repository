@@ -1,9 +1,7 @@
 from django.shortcuts import render
-
-# Create your views here.
 from django.shortcuts import render
-
 from django.http import HttpResponse
+from .models import VideoJuegos, JuegosDeMesa
 
 
 def index(request):
@@ -44,3 +42,58 @@ def prueba_S(request):
 
 def pruebas(request):
     return render(request, 'pruebas.html')
+
+
+def crud(request):
+    productos = []
+    productos.extend(VideoJuegos.objects.all())
+    productos.extend(JuegosDeMesa.objects.all())
+
+    context = {
+        'productos': productos
+    }
+    return render(request, 'crud.html', context)
+
+
+def crear_producto(request):
+    if request.method == 'POST':
+        form = VideoJuegosForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('crud')
+    else:
+        form = VideoJuegosForm()
+
+    context = {
+        'form': form
+    }
+    return render(request, 'crear_producto.html', context)
+
+
+def editar_producto(request, pk):
+    producto = get_object_or_404(VideoJuegos, pk=pk)
+    if request.method == 'POST':
+        form = VideoJuegosForm(request.POST, instance=producto)
+        if form.is_valid():
+            form.save()
+            return redirect('crud')
+    else:
+        form = VideoJuegosForm(instance=producto)
+
+    context = {
+        'form': form,
+        'producto': producto
+    }
+    return render(request, 'editar_producto.html', context)
+
+
+def eliminar_producto(request, pk):
+    producto = get_object_or_404(VideoJuegos, pk=pk)
+    if request.method == 'POST':
+        producto.delete()
+        return redirect('crud')
+
+    context = {
+        'producto': producto
+    }
+    return render(request, 'eliminar_producto.html', context)
