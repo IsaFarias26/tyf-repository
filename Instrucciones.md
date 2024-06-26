@@ -14,12 +14,12 @@ Instalar Django " pip install django "
 
 Instalar setuptools " pip install setuptools "
 
-no olvides hacer las migraciones para guaradr los cambos en la bd
-" python manage.py migrate "
+no olvides hacer las migraciones para guaradr los cambos en la bd en caso de hacerle
+" python manage.py makemigrations "
 
 luego...
 
-" python manage.py makemigrations "
+" python manage.py migrate "
 para subir los cambios a github:
 
 primero activamos el git (previamente instalado en tu pc)

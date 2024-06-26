@@ -1,206 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/4cbd49002d.js" crossorigin="anonymous"></script>
-    <title>Testeo codigo</title>
-    
-</head>
-<body>
-<!-- se puede usar ésto para un futuro login, s un chckbox, la idea puede ser como "acepto condiciones y servicios" AKJSDJK -seba
-  <div class="mb-3 form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-      <label class="form-check-label" for="exampleCheck1">Check me out</label>  
-  </div>
--->
-
-
-
-
-
-   <!--Barra superior o header-->
-   <section class="bsuperior ">
-    <div class="soy-cont-menu border-bottom container-fluid fixed-top pt-1 pb-1 " >
-        <div class="container">            
-            <div class="row d-flex align-items-center">        
-                <!--Menu-->
-                <div class="col-lg-4 col-md-4 col-3">
-                    <nav class="navbar navbar-expand-lg">
-                        <div class="container">
-                        <!--Toggle Btn-->
-                        <button class="navbar-toggler shadow-none border-0" 
-                                type="button" 
-                                data-bs-toggle="offcanvas" 
-                                data-bs-target="#offcanvasNavbar" 
-                                aria-controls="offcanvasNavbar" 
-                                aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <!--SlideBar-->
-                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                        <div class="offcanvas-header">
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                        </div>
-                            <div class="offcanvas-body">
-                            <ul class="navbar-nav  flex-grow-1 pe-3">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Categorias
-                                    </a>
-                                    <ul class="dropdown-menu border-0">
-                                    <li><a class="dropdown-item" href="MenuMesa.html">Estrategia</a></li>
-                                    <li><a class="dropdown-item" href="MenuMesa.html">Niños</a></li>
-                                    <li><a class="dropdown-item" href="MenuMesa.html">Familiar</a></li>
-                                    <li><a class="dropdown-item" href="MenuMesa.html">Fiestas</a></li>
-                                    </ul>
-                                </li>
-                                
-                                <li class="nav-item">
-                                <a class="nav-link" href="Contacto.html">Contacto</a>
-                                </li>      
-                                <li class="nav-item">
-                                  <a class="nav-link" href="nosotros.html">Nosotros</a>
-                                  </li>            
-                            </ul>
-                            
-                            </div>
-                        </div>
-                        </div>
-                    </nav>
-                </div>
-                
-                <!--Logo-->
-                <div class="text-center col-lg-4 col-md-4 col-6">
-                    <a href="Index.html"><img src="Img/Png_Teclas_Fichas-removebg-preview2.png" height="100%" alt=""></a>
-                </div>
-                <!--Iconos-->
-                <div class="col-lg-4 col-md-4 col-3 " style="position: relative;bottom:0px;">
-                    <div class="row">
-                      <div class="d-none d-sm-block d-sm-none d-md-block col-lg-10 col-md-7 ">
-                        <form class="d-flex">
-                            <input class="form-control me-2" type="text" placeholder="Search">
-                            <button class="btn btn-primary" type="button">Search</button>
-                          </form>
-                    </div>
-                    <div class="d-md-none d-lg-block d-lg-none d-xl-block  d-xl-none col-lg-1 col-md-1 col-3">
-                        <button class="btn-gen"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    </div>
-                    <div class="col-lg-1 col-md-1 col-3">
-                      <button type="button" class="btn-gen" data-bs-toggle="modal" data-bs-target="#myModal"><i class="fa-regular fa-user"></i></button>
-                  </div>
-                        <div class="col-lg-1 col-md-1 col-3">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-    
-</section>
-    <!--Fin Barra superior o header-->
-
-    <!--CARRUSEL-->
-    <div id="carouselExampleDark" class="carousel carousel-dark slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="Img/camisa_blanca_mujer.webp" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="Img/pantalon_verde_cargo.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="Img/polera_polo_raya_azul.webp" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    <!--Fin CARRUSEL-->
-
-    <div class="container marketing">
-
-      
-
-    <!--FOOTER-->
-    <div class="container-fluid border-top">
-
-  
-      <div class="container text-center">
-          <footer class="py-5">
-          <div class="row">
-              
-      
-              <div class="col-6 col-md-2 mb-3">
-              <h5>Menu</h5>
-              <ul class="nav flex-column">
-                  <li class="nav-item mb-2"><a href="Index.html" class="nav-link p-0 text-muted">Home</a></li>
-                  <li class="nav-item mb-2"><a href="Contacto.html" class="nav-link p-0 text-muted">Contacto</a></li>
-                  <li class="nav-item mb-2"><a href="nosotros.html" class="nav-link p-0 text-muted">Nosotros</a></li>
-              </ul>
-              </div>
-      
-              <div class="col-6 col-md-2 mb-3">
-              <h5>Ayuda</h5>
-              <ul class="nav flex-column">
-                  <li class="nav-item mb-2"><a href="catalogo.html" class="nav-link p-0 text-muted">Estrategia</a></li>
-                  <li class="nav-item mb-2"><a href="catalogo.html" class="nav-link p-0 text-muted">Familiar</a></li>
-                  <li class="nav-item mb-2"><a href="catalogo.html" class="nav-link p-0 text-muted">Niños</a></li>
-                  <li class="nav-item mb-2"><a href="catalogo.html" class="nav-link p-0 text-muted">Fiestas</a></li>
-              </ul>
-              </div>
-      
-              <div class="col-md-5 offset-md-1 mb-3">
-              <form>
-                  <h5>Suscribete a nuestro newsletter</h5>
-                  <p>Descubre ofertas, productos nuevos y más suscribiendote!</p>
-                  <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                  <label for="newsletter1" class="visually-hidden">Email </label>
-                  <input id="newsletter1" type="text" class="form-control" placeholder="Email">
-                  <button class="btn btn-primary" type="button">Suscribirse</button>
-                  </div>
-              </form>
-              </div>
-          </div>
-      
-          <div class="text-center flex-column flex-sm-row justify-content-between pt-4 my-4 border-top">
-              <p>© 2024 Teclas y Fichas, Todos los derechos reservados.</p>
-          </div>
-          </footer>
-      </div>
-  </div>
-  <!--Fin FOOTER-->
-    
-</body>
-</html>
+from django.conf import settings from django.db import models from django.utils
+import timezone from django.contrib.contenttypes.fields import GenericForeignKey
+from django.contrib.contenttypes.models import ContentType class
+ProductoBase(models.Model): autor = models.CharField(max_length=100) titulo =
+models.CharField(max_length=200) descripcion = models.TextField() precio =
+models.DecimalField( max_digits=10, decimal_places=2) stock =
+models.PositiveIntegerField() fecha_creacion =
+models.DateTimeField(auto_now_add=True) fecha_actualizacion =
+models.DateTimeField(auto_now=True) class Meta: abstract = True def
+__str__(self): return self.titulo class VideoJuegos(ProductoBase): plataforma =
+models.CharField(max_length=100) genero = models.CharField(max_length=100) class
+JuegosDeMesa(ProductoBase): numero_jugadores = models.CharField(max_length=100)
+edad_recomendada = models.CharField(max_length=100) duracion =
+models.CharField(max_length=100) class Categoria(models.Model): nombre =
+models.CharField(max_length=100) descripcion = models.TextField(blank=True,
+null=True) def __str__(self): return self.nombre class Etiqueta(models.Model):
+nombre = models.CharField(max_length=100) def __str__(self): return self.nombre
+class ProductoCategoria(models.Model): producto_content_type =
+models.ForeignKey( ContentType, on_delete=models.CASCADE) producto_object_id =
+models.PositiveIntegerField() producto =
+GenericForeignKey('producto_content_type', 'producto_object_id') categoria =
+models.ForeignKey(Categoria, on_delete=models.CASCADE) class
+ProductoEtiqueta(models.Model): producto_content_type = models.ForeignKey(
+ContentType, on_delete=models.CASCADE) producto_object_id =
+models.PositiveIntegerField() producto =
+GenericForeignKey('producto_content_type', 'producto_object_id') etiqueta =
+models.ForeignKey(Etiqueta, on_delete=models.CASCADE)
