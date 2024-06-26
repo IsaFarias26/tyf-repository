@@ -103,6 +103,11 @@ body{
     padding-top: 6rem;
 }
 
+#map{
+    height: 500px;
+    width: 100%;
+}
+
 
 
 

@@ -18,18 +18,19 @@ from django.contrib import admin
 from django.urls import path, include
 from TyF import views
 
-# urlpatterns = [
-path('admin/', admin.site.urls),
-path('TyF/', include('TyF.urls')),
-path('inicio/', views.index),
-path('catalogo/', views.catalogo),
-path('contacto/', views.contacto),
-path('carrito/', views.carrito),
-path('nosotros/', views.nosotros),
-path('producto/', views.producto),
-# ]
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('TyF/', include('TyF.urls')),
+    path('inicio/', views.index),
+    path('catalogo/', views.catalogo),
+    path('contacto/', views.contacto),
+    path('carrito/', views.carrito),
+    path('nosotros/', views.nosotros),
+    path('producto/', views.producto),
+]
 
 urlpatterns = [
+    path('admin/', admin.site.urls),
     path('', views.index, name='index'),
     path('catalogo/', views.catalogo, name='catalogo'),
     path('contacto/', views.contacto, name='contacto'),

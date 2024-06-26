@@ -15,7 +15,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     
-        <script src="{% static 'js/JS_Ale.js' %}"></script>
+        
 
     <title>Pagina-Inicio</title>
 </head>
@@ -73,7 +73,7 @@
                     </div>
                     <!--Logo-->
                     <div class="text-center col-lg-4 col-md-4 col-6">
-                        <img src="{% static 'Img/Png_Teclas_Fichas-removebg-preview2.png' %}" height="100%" alt="">
+                        <img src="{% static 'Img/nos/Png_Teclas_Fichas-removebg-preview2.png' %}" height="100%" alt="">
                     </div>
                     <!--Iconos-->
                     <div class="col-lg-4 col-md-4 col-3" style="position: relative; bottom:0px;">
@@ -389,7 +389,12 @@
     </section>
     <!--FIN Imagenes de fidelidad-->
     <!--FOOTER-->
+
+    <div id="map"></div>
+
+
     <div class="container-fluid border-top">
+
 
 
         <div class="container text-center">
@@ -400,10 +405,10 @@
                     <div class="col-6 col-md-2 mb-3">
                         <h5>Ayuda</h5>
                         <ul class="nav flex-column">
-                            <li class="nav-item mb-2"><a href="Index.html" class="nav-link p-0 text-muted">Home</a></li>
-                            <li class="nav-item mb-2"><a href="Contacto.html"
+                            <li class="nav-item mb-2"><a href="{% url 'index'%}" class="nav-link p-0 text-muted">Home</a></li>
+                            <li class="nav-item mb-2"><a href="{% url 'contacto'%}"
                                     class="nav-link p-0 text-muted">Contacto</a></li>
-                            <li class="nav-item mb-2"><a href="nosotros.html"
+                            <li class="nav-item mb-2"><a href="{% url 'nosotros'%}"
                                     class="nav-link p-0 text-muted">Nosotros</a></li>
                         </ul>
                     </div>
@@ -523,7 +528,8 @@
 
     <script src="{% static 'js/script.js' %}"></script>
     <script src="{% static 'js/contacto.js' %}"></script>
-    
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=iniciarMap" async defer></script>
+    <script src="{% static 'js/javascript.js' %}"></script>
 </body>
 
 </html>

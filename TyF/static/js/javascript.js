@@ -46,7 +46,17 @@
   })
 })()
 
-
+function iniciarMap(){
+  var coord = {lat: -33.0336847,lng:-71.535759};
+  var map = google.maps.Map(document.getElementById('map'),{
+    zoom: 10,
+    center: coord
+  });
+  var marker = new google.maps.Marker({
+    position: coord,
+    map: map
+  });
+}
 function validateInput(name,value,inputEmail,inputName){
   const regexEmail = /^[^\s@]+@[^\s@]+.[^\s@]+$/;
   let isValid = false;
@@ -76,7 +86,7 @@ function validateInput(name,value,inputEmail,inputName){
           isValid = value==="on";
           return isValid;
 
-         
+    
   }
 }
 
