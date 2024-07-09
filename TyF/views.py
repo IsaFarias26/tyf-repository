@@ -4,6 +4,14 @@ from django.http import HttpResponse
 from .models import VideoJuegos, JuegosDeMesa
 from django.contrib.auth.decorators import login_required
 
+
+def menu(request):
+    request.session["usuario"] = "TheShai"
+    usuario = request.session["usuario"]
+    context = {'usuario': usuario}
+    return render(request, 'Index.html')
+
+
 @login_required
 def index(request):
     return render(request, 'Index.html')
