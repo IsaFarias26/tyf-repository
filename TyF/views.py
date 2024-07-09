@@ -2,8 +2,9 @@ from django.shortcuts import render
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import VideoJuegos, JuegosDeMesa
+from django.contrib.auth.decorators import login_required
 
-
+@login_required
 def index(request):
     return render(request, 'Index.html')
 
